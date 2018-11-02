@@ -1,0 +1,9 @@
+en:
+  js:
+    filters:
+      random:
+        title: "Random"
+
+    random:
+      random_nav_help: "topics with chosen randomly"
+      random_title: "Random"
