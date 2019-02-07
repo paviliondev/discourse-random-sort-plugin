@@ -14,7 +14,7 @@ after_initialize do
   class ::TopicQuery
     def list_random(excluded_topic_ids = [])
       excluded_topic_ids += Category.topic_ids.to_a
-      create_list(:random, unordered: true) do |topics|
+      create_list(:random, unordered: true, status: 'listed') do |topics|
         topics = topics.where("topics.id NOT IN (?)", excluded_topic_ids) unless excluded_topic_ids.empty?
         topics.order("RANDOM()")
       end
