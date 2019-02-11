@@ -4,8 +4,8 @@
 # author: Procourse
 # url: https://github.com/discourse/discourse-random-sort-plugin
 
-Discourse.top_menu_items.push(:random)
-Discourse.anonymous_top_menu_items.push(:random)
+#Discourse.top_menu_items.push(:random)
+#Discourse.anonymous_top_menu_items.push(:random)
 Discourse.filters.push(:random)
 Discourse.anonymous_filters.push(:random)
 
